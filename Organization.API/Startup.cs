@@ -10,12 +10,13 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using Microsoft.OpenApi.Models;
+
 using Organization.API.Context;
 using Organization.API.IRepository;
 using Organization.API.Repository;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc.Formatters;
+using Microsoft.OpenApi.Models;
 
 namespace Organization.API
 {
@@ -81,6 +82,17 @@ namespace Organization.API
 
             services.AddDbContext<DataContext>(options => options.UseSqlServer
                 (Configuration.GetConnectionString("SqlServerConnection")));
+
+            services.AddSwaggerGen(setupaction =>
+            {
+                setupaction.SwaggerDoc(
+                    "OrganizationOpenAPISpecification",
+                    new OpenApiInfo()
+                    {
+                        Title = "Organization API",
+                        Version = "v1"
+                    });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -98,6 +110,8 @@ namespace Organization.API
             }
 
             app.UseRouting();
+
+            app.UseSwagger();
 
             app.UseAuthorization();
 

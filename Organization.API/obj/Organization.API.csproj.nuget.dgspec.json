@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Rajan\\Desktop\\Organization - Copy\\Organization.API\\Organization.API.csproj": {}
+    "I:\\Course Details\\ASP.NetCore Api Documentation with OpenApiSwagger\\Course Api\\Organization.API\\Organization.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Rajan\\Desktop\\Organization - Copy\\Organization.API\\Organization.API.csproj": {
+    "I:\\Course Details\\ASP.NetCore Api Documentation with OpenApiSwagger\\Course Api\\Organization.API\\Organization.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Rajan\\Desktop\\Organization - Copy\\Organization.API\\Organization.API.csproj",
+        "projectUniqueName": "I:\\Course Details\\ASP.NetCore Api Documentation with OpenApiSwagger\\Course Api\\Organization.API\\Organization.API.csproj",
         "projectName": "Organization.API",
-        "projectPath": "C:\\Users\\Rajan\\Desktop\\Organization - Copy\\Organization.API\\Organization.API.csproj",
+        "projectPath": "I:\\Course Details\\ASP.NetCore Api Documentation with OpenApiSwagger\\Course Api\\Organization.API\\Organization.API.csproj",
         "packagesPath": "C:\\Users\\Rajan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Rajan\\Desktop\\Organization - Copy\\Organization.API\\obj\\",
+        "outputPath": "I:\\Course Details\\ASP.NetCore Api Documentation with OpenApiSwagger\\Course Api\\Organization.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -80,6 +80,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[3.1.5, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.5.1, )"
             }
           },
           "imports": [
